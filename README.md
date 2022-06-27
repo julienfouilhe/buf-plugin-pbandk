@@ -23,6 +23,5 @@ plugins:
 See https://docs.buf.build/bsr/remote-generation/plugin-example
 
 ```bash
-DOCKER_BUILDKIT=1 docker build . -t plugins.buf.build/julienfouilhe/pbandk:v0.14.1 && \
-docker push plugins.buf.build/julienfouilhe/pbandk:v0.14.1
+./build-push-version.sh 0.14.1
 ```
