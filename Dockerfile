@@ -1,6 +1,6 @@
 FROM alpine/curl as builder
 
-ARG PBANDK_VERSION=0.14.1
+ARG PBANDK_VERSION
 
 RUN curl -f --output /usr/local/bin/protoc-gen-pbandk https://repo1.maven.org/maven2/pro/streem/pbandk/protoc-gen-pbandk-jvm/$PBANDK_VERSION/protoc-gen-pbandk-jvm-$PBANDK_VERSION-jvm8.jar
 
